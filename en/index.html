@@ -1,21 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Сайт</title>
+    <link rel="stylesheet" href="../style/normolize.css">
+    <link rel="stylesheet" href="../style/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <title>Kurt</title>
 </head>
+
 <body>
-    <header>
-        <div class="up_header">
-            <span>Лого</span>
-            <select onchange="window.location=this.options[this.selectedIndex].value">
+    <header class="wrapper">
+        <div class="header_up">
+            <div class="logo"><img src="src/logo.png" alt="" width="100px" height="70px">KURTIS</div>
+            <select class="lang" onchange="window.location=this.options[this.selectedIndex].value">
                 <option value="">en</option>
                 <option value="../kz/index.html">kz</option>
-                <option value="../index.html">ru</option>
+                <option value="../ru/index.html">ru</option>
             </select>
         </div>
+        <div class="header_down">
+            <nav class="burger" id="nav">
+                <a href="#cart" class="item_nav"><span class="item_burger">Собрать корзину</span></a>
+                <a href="#Cfacts" class="item_nav"><span class="item_burger">Факты</span></a>
+                <a href="#map" class="item_nav"><span class="item_burger">Мы на карте</span></a>
+                <a href="#footer" class="item_nav"><span class="item_burger">Связь с нами</span></a>
+            </nav>
+            <div class="button_burger" id="button_burger">
+                <div class="block" id="block1"></div>
+                <div class="block" id="block2"></div>
+                <div class="block" id="block3"></div>
+            </div>
+        </div>
     </header>
+    <main class="wrapper">
+        <div class="adapevnosug">
+            <div class="adapevnosug-edsa">
+                <input class="adapevnosug-nasav" type="radio" id="adapevnosug-1" name="adapevnosug" aria-hidden="true"
+                    hidden="" checked="checked">
+                <div class="adapevnosug-kolas">
+                    <iframe width="853" height="480" src="https://www.youtube.com/embed/GXL046dGrfo"
+                        title="Великая казахская степь видео снято на MAVIC PRO 2" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+                <input class="adapevnosug-nasav" type="radio" id="adapevnosug-2" name="adapevnosug" aria-hidden="true"
+                    hidden="">
+                <div class="adapevnosug-kolas">
+                    <img src="src/slide2.jpeg">
+                </div>
+                <input class="adapevnosug-nasav" type="radio" id="adapevnosug-3" name="adapevnosug" aria-hidden="true"
+                    hidden="">
+                <div class="adapevnosug-kolas">
+                    <img src="src/slide1.jpeg">
+                </div>
+                <label for="adapevnosug-3" class="vealulu-kadsan prev nedsug-1">‹</label>
+                <label for="adapevnosug-2" class="vealulu-kadsan next nedsug-1">›</label>
+                <label for="adapevnosug-1" class="vealulu-kadsan prev nedsug-2">‹</label>
+                <label for="adapevnosug-3" class="vealulu-kadsan next nedsug-2">›</label>
+                <label for="adapevnosug-2" class="vealulu-kadsan prev nedsug-3">‹</label>
+                <label for="adapevnosug-1" class="vealulu-kadsan next nedsug-3">›</label>
+                <ol class="esamon-getusa">
+                    <li>
+                        <label for="adapevnosug-1" class="adapevnosug-bullet">•</label>
+                    </li>
+                    <li>
+                        <label for="adapevnosug-2" class="adapevnosug-bullet">•</label>
+                    </li>
+                    <li>
+                        <label for="adapevnosug-3" class="adapevnosug-bullet">•</label>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div class="vetrina" id="cart">
+            <div class="left">
+                <div class="track_vetrina">
+                    <div class="tovar">
+                        <img src="src/tovar2.jpeg" alt="" width="100px" height="100px">
+                        <div>
+                            <span>Синий Курт Шоро Классический 30г</span>
+                            <span>370 тг./шт</span>
+                        </div>
+                        <div class="button" id="tovar1">Добавить</div>
+                    </div>
+                    <div class="tovar">
+                        <img src="src/tovar1.jpeg" alt="" width="100px" height="100px">
+                        <div>
+                            <span>Зелёный Шоро курт лайт соленый 30 г</span>
+                            <span>370 тг./шт</span>
+                        </div>
+                        <div class="button" id="tovar2">Добавить</div>
+                    </div>
+                    <div class="tovar">
+                        <img src="src/tovar3.jpeg" alt="" width="100px" height="100px">
+                        <div>
+                            <span>Жёлтый Курутики Шоро м/у 30г.</span>
+                            <span>370 тг./шт</span>
+                        </div>
+                        <div class="button" id="tovar3">Добавить</div>
+                    </div>
+                    <div class="tovar">
+                        <img src="src/tovar4.jpeg" alt="" width="100px" height="100px">
+                        <div>
+                            <span>Курт Казахстанский</span>
+                            <span>2000 тг./кг</span>
+                        </div>
+                        <div class="button" id="tovar4">Добавить</div>
+                    </div>
+                    <div class="tovar">
+                        <img src="src/tovar5.jpeg" alt="" width="100px" height="100px">
+                        <div>
+                            <span>Курт с базиликом</span>
+                            <span>2590 тг./кг</span>
+                        </div>
+                        <div class="button" id="tovar5">Добавить</div>
+                    </div>
+                    <div class="tovar">
+                        <img src="src/tovar6.jpeg" alt="" width="100px" height="100px">
+                        <div>
+                            <span>Курт острый с паприкой</span>
+                            <span>2190 тг./кг</span>
+                        </div>
+                        <div class="button" id="tovar6">Добавить</div>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <span style="padding: 10px;">Чек</span>
+                <div class="chek_box">
+                    <div class="chek" id="chek"></div>
+                    <br>
+                    <div class="itog">
+                        <div class="prise" id="prise">Итого: 0 тг.</div>
+                        <div class="dlivary">Доставка: 500 тг.</div>
+                    </div>
+                    <a href="" style="background-color: white; text-align: center; border-radius: 5px; ">Оформить
+                        заказ</a>
+                </div>
+            </div>
+        </div>
+        <p style="text-align: center; font-size: 50px;" id="Cfacts">Интересные факты</p>
+        <div class="facts">
+            <img src="src/logo.png" alt="" width="200px" height="150px">
+            <div class="fact">
+                <div id="fact"></div>
+                <div class="new_fact" id="new_fact">Новый факт</div>
+            </div>
+        </div>
+        <script src="js/fact.js"></script>
+        <div style="width: 100%; display: flex;flex-direction: column; align-items: center; margin-bottom: 50px;">
+            <p style="text-align: center; font-size: 50px;" id="map">Мы на карте</p>
+            <div style="position:relative;overflow:hidden;"><a
+                    href="https://yandex.kz/maps/190/pavlodar/?utm_medium=mapframe&utm_source=maps"
+                    style="color:#eee;font-size:12px;position:absolute;top:0px;">Павлодар</a><a
+                    href="https://yandex.kz/maps/190/pavlodar/house/Y08YfwFpS0QAQFtofX54eXxhYg==/?ll=76.970369%2C52.298012&utm_medium=mapframe&utm_source=maps&z=17.38"
+                    style="color:#eee;font-size:12px;position:absolute;top:14px;">Улица Торайгырова, 113 —
+                    Яндекс Карты</a><iframe
+                    src="https://yandex.kz/map-widget/v1/?ll=76.970369%2C52.298012&mode=whatshere&whatshere%5Bpoint%5D=76.968654%2C52.297957&whatshere%5Bzoom%5D=17&z=17.38"
+                    width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+            </div>
+        </div>
+        <div style="width: 100%; display: flex;flex-direction: column; align-items: center; margin-bottom: 50px;">
+            <p style="text-align: center; font-size: 50px;" id="map">Оформить заказ</p>
+            <form action="api/index.php" method="post">
+                <div class="input">
+                    <input type="text" name="email" id="email" required>
+                    <label for="">ФИО</label>
+                </div>
+                <div class="input">
+                    <input type="text" name="subject" id="subject" required>
+                    <label for="">Контактные данные(E-mail, телефон)</label>
+                </div>
+                <div class="input">
+                    <input type="text" name="locate" id="locate" required>
+                    <label for="">Место доставки</label>
+                </div>
+                <button type="submit">Отправить</button>
+            </form>
+        </div>
+
+    </main>
+    <footer class="wrapper" id="footer">
+        <div class="">8 778 784 64-54</div>
+        <div class="">kurtis@mail.ru</div>
+        <div class="" style="margin-top: 20px;">kurtis&#xae;</div>
+    </footer>
+    <script src="js/chek.js"></script>
+    <script src="js/burger.js"></script>
 </body>
+
 </html>

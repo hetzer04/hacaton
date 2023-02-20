@@ -22,7 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $mail->isHTML(true);
 
     $mail->Subject = '' .$subject;
-    $mail->Body    = 'Клиент хочет сделать заказ. Отправил '.$email.' .Место положение '.$text;
+    $mail->Body    = 'Клиент хочет сделать заказ. Отправил '.$email.' .Место положение '.text;
     $mail->AltBody = '*';
 
     if(!$mail->send()) {

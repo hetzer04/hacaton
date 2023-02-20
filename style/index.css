@@ -14,6 +14,10 @@ header {
     background-color: #C3D996;
 }
 
+.item_nav:hover{
+    color: #393939;
+}
+
 a {
     outline: none;
     text-decoration: none;
@@ -251,6 +255,9 @@ main {
     position: relative;
 }
 
+.button:hover{
+    color: #393939;
+}
 .track_vetrina {
     position: absolute;
     width: 800px;
@@ -324,6 +331,7 @@ main {
     height: 200px;
     display: flex;
     flex-direction: row;
+    align-items: center;
     gap: 20px;
     padding: 20px;
     margin: 0 auto;
@@ -388,4 +396,28 @@ footer{
     flex-direction: column;
     background-color: #C3D996;
     padding: 20px 0;
+}
+
+form{
+    width: 335px;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.input{
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+}
+input[type="text"] {
+    height: 25px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+button{
+    width: 100%;
+    font-size: 20px;
 }

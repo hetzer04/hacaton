@@ -88,7 +88,7 @@ var tovar3 = {
 var tovar4 = {
     name: "tovar4",
     count: 1,
-    prise: 2000,
+    prise: 2.000,
     draw: function () {
         chek_box.innerHTML += `<div class="chek_tovar">
         <img src="src/tovar4.jpeg" width = "50px" height = "50px">
