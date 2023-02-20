@@ -2,6 +2,7 @@ html,
 body {
     background-color: rgb(238, 238, 238);
     scroll-behavior: smooth;
+    font-family: 'Roboto Condensed';
 }
 
 body {
@@ -102,6 +103,8 @@ select{
 }
 .logo {
     margin: 10px 20px;
+    margin-top: 30px;
+    
     width: 100px;
     height: 60px;
     display: flex;
